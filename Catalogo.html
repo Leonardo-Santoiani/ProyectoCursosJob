@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Job</title>
+    <link rel="shortcut icon" href="imagenes/LOGO ABREVIADO.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos_catalogo.css"> 
+</head>
+
+<body>
+    <header>
+        
+        <a href="index.html" class="logo">
+            <img src="imagenes/logo cj nu.png" alt="Logo cursos job" width="80">
+            <h1 class="title-page">Cursos Job</h1>
+        </a>
+        <nav class="navbar">
+            <div class="nav_items" id="_items">
+                <a href="index.html">Inicio</a>
+                <a href="Catalogo.html">Cursos</a>
+                <a href="Consultas.html">Consultas</a>
+                <a href="preguntas.html">Preguntas Frecuentes</a>
+                <a href="Quienessomos.html">Nosotros</a>
+            </div>
+            <div class="nav_toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    <div class="promo">
+        <h3>Impulsa tu Carrera con Nuestros Cursos Especializados</h3>
+    </div>
+    <br>
+    
+    <div class="container">
+      <section class="productos" id="productos"></section>  
+      <template id="producto-template">
+        <figure class="producto">
+          <img>
+          <figcaption></figcaption> 
+        </figure>
+      </template>
+    <br>
+
+    <footer class="item">
+        <h5 class="siguenos">Sígue nuestras redes sociales</h5>
+        <div class="fb-ig-tw">
+            <a class="iconos" href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-x-twitter" title="Ir a Twitter"></i>
+            </a>
+            <a class="iconos" href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a class="iconos" href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="iconos" href="https://www.youtube.com" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <div class="container-copy">
+            <p class="copyright">Copyright © 2023 Cursos Job. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/API.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/2da3a71e82.js" crossorigin="anonymous"></script>
+    <script src="/js/NavbarMenu.js"></script>
+    <script src="/js/funcionNavbar.js"></script>
+</body>
+</html>

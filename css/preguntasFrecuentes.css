@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-color: #2f2f2f;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: rgb(250, 195, 0);
+    align-items: center;
+    padding: 0px;
+}
+
+.title-page {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: 70px;
+    margin-right: 5px;
+    padding: 28px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav a {
+    font-weight: 600;
+    padding-right: 25px;
+    font-size: 20px;
+
+}
+
+nav a:hover {
+    color: azure;
+}
+
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: auto;
+    color: #ffffff;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    font-size: 15px;
+    margin-bottom: 148px;
+}
+
+
+.titulo {
+    font-size: 24px;
+    text-align: center;
+}
+
+.acordeon {
+    margin-top: 20px;
+}
+
+.acordeon-item {
+    margin-bottom: 10px;
+
+}
+
+.acordeon-boton {
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.acordeon-boton:hover {
+    background-color: #646464a8;
+    border-radius: 5px;
+}
+
+.acordeon-contenido {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+
+}
+
+.acordeon-item.activo .acordeon-contenido {
+    display: block;
+
+}
+
+.acordeon-item.activo .acordeon-boton {
+    border-bottom: none;
+
+}
+
+footer {
+    background-color: rgb(250, 195, 0);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: 67px;
+}
+
+.siguenos {
+    font-size: 20px;
+    padding-top: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: aliceblue;
+    padding-bottom: 14px;
+    margin-bottom: 3px;
+    margin-top: 0;
+
+}
+
+.fb-ig-tw {
+    display: flex;
+    justify-content: center;
+}
+
+.fb-ig-tw i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.fb-ig-tw i:hover {
+    opacity: 0.7;
+}
+
+.container-copy {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav_items a {
+
+    position: relative;
+    text-decoration: none;
+}
+
+.nav_items a:hover::before {
+    width: 100% !important;
+}
+
+.nav_toggle {
+    display: none;
+}
+
+
+
+.active {
+    background-color: #0000006e;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1000px) {
+
+    nav a {
+        font-weight: 600;
+        padding-right: 0px;
+        font-size: 20px;
+    }
+    .title-page {
+        font-size: 20px;
+        margin-right: 20px;
+        color: black;
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .nav_items {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: 0.3s ease all;
+        margin-top: 30px;
+    }
+
+    .nav_items a {
+        text-align: center;
+        margin: 15px;
+    }
+
+    .nav_toggle {
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .nav_toggle span {
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+
+    .close span {
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+
+    .close span:nth-child(2) {
+        display: none;
+    }
+
+    .close span:nth-child(3) {
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+
+    .open {
+        transform: translateX(0) !important
+    }
+
+    .iconos {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .active {
+        background-color: #0000006e;
+        color: #fff;
+        border-radius: 20px;
+        margin-right: 10px;
+        padding: 0;
+    }
+}
+
+

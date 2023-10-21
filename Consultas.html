@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Job</title>
+    <link rel="shortcut icon" href="imagenes/LOGO ABREVIADO.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos_consultas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&family=Montserrat:wght@500;600&family=Rubik+Iso&display=swap"
+        rel="stylesheet">
+</head>
+
+    <body>
+        <header>
+            
+            <a href="index.html" class="logo">
+                <img src="imagenes/logo cj nu.png" alt="Logo cursos job" width="80">
+                <h1 class="title-page">Cursos Job</h1>
+            </a>
+            <nav class="navbar">
+                <div class="nav_items" id="_items">
+                    <a href="index.html">Inicio</a>
+                    <a href="Catalogo.html">Cursos</a>
+                    <a href="Consultas.html">Consultas</a>
+                    <a href="preguntas.html">Preguntas Frecuentes</a>
+                    <a href="Quienessomos.html">Nosotros</a>
+                </div>
+                <div class="nav_toggle" id="_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+      
+        <div class="promo">
+            <h3>¡Si no sabes qué curso te conviene, completa este formulario y te enviaremos una sugerencia a
+                medida!</h3>
+        </div>
+        <br>
+
+        <section>
+            <h3>Complete el formulario</h3>
+            <form action="mostrar_datos.html" id="miFormulario">
+                <label for="nombre">Nombre:</label>
+                <input class="inputs" name="Nombre" id="nombre"  placeholder="Solo utilice letras" size="30"
+                    maxlength="20">
+                <br>
+                <label for="Apellido">Apellido:</label>
+                <input  class="inputs" name="Apellido" id="ape"  placeholder="Solo utilice letras" size="30"
+                    maxlength="20">
+                <br>
+                <label for="numeroDeCelular">Número de Celular:</label>
+                <input  class="inputs" name="Celular" id="numeroDeCelular" placeholder="Solo utilice números">
+                <br>
+                <label for="email">Email:</label>
+                <input  class="inputs" name="email" id="email"  placeholder="Formato de email exaple@gmail.com">
+                <br>
+                <p>¿Qué área o temática te interesa?
+                    <select>
+                        <option disabled selected="">Seleccione una opción</option>
+                        <option>Idiomas</option>
+                        <option>Tecnología</option>
+                        <option>Salud</option>
+                        <option>Otros</option>
+                    </select>
+                </p>
+                <p>¿Qué nivel de dificultad buscas?
+                    <select>
+                        <option disabled selected="">Seleccione una opción</option>
+                        <option>Principiante</option>
+                        <option>Intermedio</option>
+                        <option>Avanzado</option>
+                    </select>
+                </p>
+                <p>¿Qué objetivo tienes con el curso?
+                    <select>
+                        <option disabled selected="">Seleccione una opción</option>
+                        <option>Hobby</option>
+                        <option>Salida laboral</option>
+                        <option>Obtener un certificado</option>
+                    </select>
+                </p>
+                <p>Mensaje: <textarea id="mensaje" name="mensaje" rows="5" cols="40"></textarea></p>
+                <p><input type="submit" value="Enviar" class="boton-negrita">
+                    <input type="reset" value="Reiniciar" class="boton-negrita">
+                </p>
+
+            </form>
+        </section>
+        </main>
+        <br>
+        <footer class="item">
+            <h5 class="siguenos">Sígue nuestras redes sociales</h5>
+            <div class="fb-ig-tw">
+                <a class="iconos" href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-x-twitter" title="Ir a Twitter"></i>
+                </a>
+                <a class="iconos" href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a class="iconos" href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="iconos" href="https://www.youtube.com" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <div class="container-copy">
+                <p class="copyright">Copyright © 2023 Cursos Job. Todos los derechos reservados</p>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/2da3a71e82.js" crossorigin="anonymous"></script>
+        <script src="/js/NavbarMenu.js"></script>
+        <script src="/js/ValidarForm.js"></script>
+        <script src="/js/funcionNavbar.js"></script>
+    </body>
+</html>
