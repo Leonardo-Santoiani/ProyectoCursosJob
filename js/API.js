@@ -52,8 +52,8 @@ $d.addEventListener("click", e => {
                 quantity: 1
             }],
             mode: "payment",
-            successUrl:"http://127.0.0.1:5500/API/Confirmacion.html",
-            cancelUrl:"http://127.0.0.1:5500/API/cancelacion.html"
+            successUrl: "https://leonardo-santoiani.github.io/ProyectoCursosJob/API/Confirmacion.html",
+            cancelUrl: "https://leonardo-santoiani.github.io/ProyectoCursosJob/API/cancelacion.html"
         })
         .then(res => {
             if (res.error){
